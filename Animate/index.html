@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Animate css</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .animate__backInDown {
+            /* animation-delay: 10s; */
+            /* animation-iteration-count: 2; */
+        }
+        div:hover h1{
+            animation:backInDown 1s;
+        }
+        div:hover p{
+            animation:backInDown 1s;
+        }
+        #aside:checked ~p{animation:slideOutLeft 0.4s forwards;}
+        #aside ~p{animation:slideInLeft 0.4s forwards;}
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="animate__animated">A simple example of using Animate.css</h1>
+
+        <p class="animate__animated">
+            Here's the element that will be animated.
+        </p>
+    </div>
+    <input type="checkbox" class="switch" id="aside">
+    <label for="aside">Toggle</label>
+    <p class="animated__animated">
+        Here's the element that will be animated.
+    </p>
+</body>
+
+</html>

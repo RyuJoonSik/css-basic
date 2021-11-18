@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: black;
+  height: 100vh;
+  display: flex;
+  /* 중심축 지정 */
+  /* flex-direction: row; */
+  /* 한 줄에 가득차면 다음 줄로 넘어가게 할지 */
+  /* flex-wrap: wrap; */
+  /* direction, wrap 속성을 한 번에 지정 */
+  /* flex-flow: clumn nowrap; */
+  /* 중심축의 배치 기준, 사이 공간 지정 */
+  /* justify-content: space-evenly; */
+  /* 반대축의 배치 기준 */
+  /* align-items: center; */
+  /* 반대축의 배치 기준(justify-content 값과 동일)*/
+  /* align-content: center; */
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+}
+
+.container > .item1 {
+  background-color: #e74c3c;
+  /* 순서 지정 */
+  /* order: 2; */
+  /* 여백 채우기 */
+  /* flex-grow: 1; */
+  /* 작아지는 크기 지정 */
+  /* flex-shrink: 2; */
+  /* 너비 지정(기본 값 : auto) */
+  /* flex-basis: 60%; */
+  /* flex: grow, shrink, basis */
+  flex: 2 2 auto;
+  /* 상자 하나만 위치 조정 */
+  align-self: center;
+}
+.container > .item2 {
+  background-color: #e67e22;
+  /* order: 3; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex-basis: 20%; */
+}
+.container > .item3 {
+  background-color: #f1c40f;
+  /* order: 1; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex-basis: 20%; */
+}
+.container > .item4 {
+  background-color: #27ae60;
+}
+.container > .item5 {
+  background-color: #2980b9;
+}
+.container > .item6 {
+  background-color: #e74c3c;
+}
+.container > .item7 {
+  background-color: #8e44ad;
+}
+.container > .item8 {
+  background-color: #95a5a6;
+}
+.container > .item9 {
+  background-color: #34495e;
+}
+.container > .item10 {
+  background-color: #ecf0f1;
+}

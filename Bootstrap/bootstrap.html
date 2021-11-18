@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap example</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="open-iconic-bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class=container>
+        <span class="oi oi-action-redo"></span>
+        <div class="row">
+            <!-- 열(Column)을 나누려면 행(row) 블록으로 감싸줘야 한다. -->
+            <div class="col-md-6 col-sm-8 col-12 ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quasi ea eligendi facilis,
+                    nihil ratione optio vel corrupti error, minus et in. Atque sequi nisi maiores eveniet reiciendis.
+                    Atque.
+                    Temporibus veniam, quam doloribus omnis repudiandae quae autem voluptas fuga dicta odio odit eveniet
+                    a soluta dolor unde voluptate quibusdam similique, reprehenderit obcaecati, ex repellat. Quisquam
+                    placeat pariatur qui doloremque.
+                    In sed iusto tempore facilis beatae a aliquid laborum. Error ratione odit dolorum voluptatibus ullam
+                    quae consequatur similique aperiam maiores! Perferendis assumenda incidunt ab voluptate ex libero
+                    eaque consectetur nobis.</p>
+            </div>
+            <div class="col-md-6 col-sm-4 col-12 ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quasi ea eligendi facilis,
+                    nihil ratione optio vel corrupti error, minus et in. Atque sequi nisi maiores eveniet reiciendis.
+                    Atque.
+                    Temporibus veniam, quam doloribus omnis repudiandae quae autem voluptas fuga dicta odio odit eveniet
+                    a soluta dolor unde voluptate quibusdam similique, reprehenderit obcaecati, ex repellat. Quisquam
+                    placeat pariatur qui doloremque.
+                    In sed iusto tempore facilis beatae a aliquid laborum. Error ratione odit dolorum voluptatibus ullam
+                    quae consequatur similique aperiam maiores! Perferendis assumenda incidunt ab voluptate ex libero
+                    eaque consectetur nobis.</p>
+            </div>
+            <!-- <div class=col-md-6 col-sm-4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quasi ea eligendi facilis, nihil ratione optio vel corrupti error, minus et in. Atque sequi nisi maiores eveniet reiciendis. Atque.
+                    Temporibus veniam, quam doloribus omnis repudiandae quae autem voluptas fuga dicta odio odit eveniet a soluta dolor unde voluptate quibusdam similique, reprehenderit obcaecati, ex repellat. Quisquam placeat pariatur qui doloremque.
+                    In sed iusto tempore facilis beatae a aliquid laborum. Error ratione odit dolorum voluptatibus ullam quae consequatur similique aperiam maiores! Perferendis assumenda incidunt ab voluptate ex libero eaque consectetur nobis.</p>
+            </div> -->
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Link with href
+                </a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Button with data-bs-target
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.placehold.it/300x200" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.placehold.it/300x200" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.placehold.it/300x200" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quasi ea eligendi facilis, nihil
+            ratione optio vel corrupti error, minus et in. Atque sequi nisi maiores eveniet reiciendis. Atque.
+            Temporibus veniam, quam doloribus omnis repudiandae quae autem voluptas fuga dicta odio odit eveniet a
+            soluta dolor unde voluptate quibusdam similique, reprehenderit obcaecati, ex repellat. Quisquam placeat
+            pariatur qui doloremque.
+            In sed iusto tempore facilis beatae a aliquid laborum. Error ratione odit dolorum voluptatibus ullam quae
+            consequatur similique aperiam maiores! Perferendis assumenda incidunt ab voluptate ex libero eaque
+            consectetur nobis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique quasi ea eligendi facilis, nihil
+            ratione optio vel corrupti error, minus et in. Atque sequi nisi maiores eveniet reiciendis. Atque.
+            Temporibus veniam, quam doloribus omnis repudiandae quae autem voluptas fuga dicta odio odit eveniet a
+            soluta dolor unde voluptate quibusdam similique, reprehenderit obcaecati, ex repellat. Quisquam placeat
+            pariatur qui doloremque.
+            In sed iusto tempore facilis beatae a aliquid laborum. Error ratione odit dolorum voluptatibus ullam quae
+            consequatur similique aperiam maiores! Perferendis assumenda incidunt ab voluptate ex libero eaque
+            consectetur nobis.</p>
+    </div>
+</body>
+
+</html>

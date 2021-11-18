@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.megaphone {
+  float: left;
+  /* shape-outside: circle(50% at 0 0); */
+  /* shape-outside: circle(50% at 50% 50%); */
+  shape-outside: circle(50%);
+  margin-right: 10px;
+}
+.desktop {
+  float: left;
+  margin-right: 10px;
+  shape-outside: inset(40px 20px 60px 0);
+}
+.logo {
+  shape-outside: polygon(
+    62px -2px,
+    210px -1px,
+    284px 107px,
+    227px 215px,
+    69px 215px,
+    -3px 107px
+  );
+  float: left;
+  margin-right: 10px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed #000;
+  margin: 2rem auto;
+}
+.box svg {
+  width: 200px;
+  height: 200px;
+}
+.shape {
+  fill: #eee;
+  stroke: #ccc;
+}

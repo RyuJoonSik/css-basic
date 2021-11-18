@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="[add your bin description]">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    button{
+            font-size: 1em;
+            background: #3498db;
+            color: #fff;
+            border: 0.25rem solid #3498db;
+            margin: 1em;
+            padding: 0.98em 0.78em;
+            position: relative; 
+            overflow: hidden;   
+            z-index: 1;
+    }
+    button:hover {color:#3498db;}
+    button::before{
+      content:'';
+      background:#ecf0f1;
+      position: absolute;
+      padding: 0.85em 0.78em;
+      z-index: -1;
+      transition:0.35s;
+    }
+    button[class^="slide"]:before{
+      
+    }
+    button[class^="slide"]:hover::before{
+      left: 0; right: 0; top: 0; bottom: 0;
+            
+    }
+    .slide_from_left::before{
+      left: -100%; right: 100%;
+      top: 0; bottom: 0;
+    }
+    .slide_from_right::before{
+      left: 100%; right: -100%;
+      top: 0; bottom: 0;
+    }
+    .slide_from_top::before{
+      left: 0; right: 0;
+      top: -100%; bottom: 100%;
+    }
+    .slide_from_bottom::before{
+      left: 0; right: 0;
+      top: 100%; bottom: -100%;
+    }
+    .grow_box::before{
+      left: 0; right: 0; top: 0; bottom: 0;
+      transform: scale(0);
+      transition: 0.35s
+    }
+    .grow_box:hover::before{
+      transform: scale(1);
+    }
+    .grow_ellipse::before{
+      transform: scale(0);
+      left: -50%; right: -50%; top: -50%; bottom: -50%;
+      border-radius : 50%;
+    }
+    .grow_ellipse:hover::before{
+      transform: scale(1);
+    }
+    .grow_spin::before{
+      left: 0; right: 0; top: 0; bottom: 0;
+      transform: scale(0) rotate(-180deg);
+    }
+    .grow_spin:hover::before{
+      left: 0; right: 0; top: 0; bottom: 0;
+      transform: scale(1) rotate(-0deg);
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <button class="slide_from_left">SLIDE FROM LEFT
+    <div class="before"></div>
+  </button>
+  <button class="slide_from_right">SLIDE FROM RIGHT</button>
+  <button class="slide_from_top">SLIDE FROM TOP</button>
+  <button class="slide_from_bottom">SLIDE FROM BOTTOM</button>
+  <hr>
+  <button class="grow_box">GROW BOX</button>
+  <button class="grow_ellipse">GROW ELLIPSE</button>
+  <button class="grow_skew_forward">GROW SKEW &rarr;</button>
+  <button class="grow_skew_backward">GROW BOX &larr;</button>
+  <button class="grow_spin">GROW SPIN</button>
+</div>
+</body>
+</html>

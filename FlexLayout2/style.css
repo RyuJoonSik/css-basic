@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #333338;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  /* align-items: stretch; 기본값. 가장 긴 높이를 기준으로 맞춤 */
+}
+.container::after {
+  /* content: "";
+  display: block;
+  clear: both; */
+}
+.main-content {
+  flex: 2;
+  /* float: left;
+  width: 70%;
+  height: 800px; */
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* flex-wrap: wrap;
+  align-content: space-between; */
+  /* float: left;
+  width: 25%;
+  height: 800px; */
+}
+
+.main-content .panel img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.main-content,
+.sidebar {
+  margin: 10px;
+  background: #eee;
+  padding: 6px;
+}
+
+.panel {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+}

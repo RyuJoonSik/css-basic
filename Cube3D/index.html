@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="perspective">
+            <input type="radio" id="rotate" name="switch">
+            <label for="rotate">auto</label> <!-- CSS 구조(바로 뒤에 오는 요소에 + 셀렉터 사용하기 위한 순서) -->
+            <input type="radio" id="front" name="switch">
+            <label for="front">front</label>
+            <input type="radio" id="back" name="switch">
+            <label for="back">back</label>
+            <input type="radio" id="top" name="switch">
+            <label for="top">top</label>
+            <input type="radio" id="bottom" name="switch">
+            <label for="bottom">bottom</label>
+            <input type="radio" id="left" name="switch">
+            <label for="left">left</label>
+            <input type="radio" id="right" name="switch">
+            <label for="right">right</label>
+            <div class="cube">
+                <div class="front">front</div>
+                <div class="back">back</div>
+                <div class="top">top</div>
+                <div class="bottom">bottom</div>
+                <div class="left">left</div>
+                <div class="right">right</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

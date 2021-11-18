@@ -1,0 +1,8 @@
+HTML
+- input태그의 여러 type
+- input태그 속성 pattern에 쓰이는 정규식
+- 접근성(tab)
+
+CSS
+- 호환성을 위해 input,select 기본 스타일 수정
+- :focus와 :active의 차이

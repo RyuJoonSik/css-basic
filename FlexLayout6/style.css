@@ -1,0 +1,90 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.image-row {
+  display: flex;
+}
+
+.image-row div {
+  height: 240px;
+  margin: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* .image-row {
+  display: flex;
+} */
+.image-row div.image01 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-01.jpg");
+  flex: 1;
+}
+.image-row div.image02 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-02.jpg");
+  flex: 1;
+}
+.image-row div.image03 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-03.jpg");
+  flex: 2;
+}
+.image-row div.image04 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-04.jpg");
+  flex: 2;
+}
+.image-row div.image05 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-05.jpg");
+  flex: 2;
+}
+.image-row div.image06 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-06.jpg");
+  flex: 2;
+}
+.image-row div.image07 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-07.jpg");
+  flex: 1;
+}
+.image-row div.image08 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-08.jpg");
+  flex: 2;
+}
+.image-row div.image09 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-09.jpg");
+  flex: 1;
+}
+.image-row div.image10 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-10.jpg");
+  flex: 1;
+}
+.image-row div.image11 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-11.jpg");
+  flex: 1;
+}
+.image-row div.image12 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-12.jpg");
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  /* .image-row {
+    flex-direction: column;
+  } */
+  .image-row {
+    flex-wrap: wrap;
+  }
+  .image-row div[class^="image"] {
+    width: 99%;
+    flex: none;
+  }
+  /* .image-row div.image02 {
+    width: 100%;
+    flex: none;
+  }
+  .image-row div.image03 {
+    width: 100%;
+    flex: none;
+  } */
+}

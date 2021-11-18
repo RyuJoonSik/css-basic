@@ -1,0 +1,59 @@
+@charset "utf-8";
+// 변수
+@maincolor: #444444;
+@titlecolor: (@maincolor - #222222);
+@linkcolor: (@maincolor + #222222);
+@mainFontSize: 12px;
+@titleFontSize: (@mainFontSize * 2);
+
+@baseUrl: "https://via.placeholder.com/150";
+
+// Mixins
+.bordered {
+  border-top: dotted 1px red;
+  border-bottom: solid 2px blue;
+}
+
+.rounded-corners(@radius:5px, @weight:100) {
+  border-radius: @radius;
+  font-weight: @weight;
+}
+
+#header {
+  color: black;
+  nav {
+    font-size: 16px;
+    a {
+      color: red;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+#content h1 {
+  // .rounded-corners;
+  .rounded-corners(20px, 600);
+  background-color: silver;
+}
+
+nav h1,
+#container > h1 {
+  .bordered;
+}
+
+body {
+  color: @maincolor;
+  font-size: @mainFontSize;
+  background-image: url(@baseUrl);
+}
+
+h1 {
+  color: @titlecolor;
+  font-size: @titleFontSize;
+}
+
+a {
+  color: @linkcolor;
+}

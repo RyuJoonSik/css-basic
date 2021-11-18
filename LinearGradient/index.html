@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > div{
+        }
+        h1{text-align: center;}
+        .box{
+            width: 300px; height: 200px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+        .linear{
+            /* to bottom이 기본값.  0%와 100%전후 색상이 같으면 생략 가능. 0% 와 100% 색상이 두 가지 뿐이면 %t생략 가능
+            브라우저 버전에 따라 차이가 있으므로 color zillar gradient에서 확인하고 쓴다.*/
+            /* background:linear-gradient(방향, 색상 위치, 색상 위치); */
+            /* background:linear-gradient(to bottom, #000 0%, #fff 100%) */
+            /* background: linear-gradient(to bottom, #000 0%, #fff 50%, #000 100%); */
+            /* background: linear-gradient(45deg, #000 0%, #fff 50%, #000 100%); */
+            /* background: linear-gradient(45deg, #000 0%, #fff 100%); */
+            /* background: linear-gradient(45deg, #2989cc 0%, #fff 50%, #906a00 52%, #d99f00 64%, #fff 100%); */
+            /* background:linear-gradient(to right, #2989cc 20%, #fff 20%, #fff 80%, #2989cc 80%) */
+            /* background: repeating-linear-gradient(#2989cc, #fff 20%); */
+            background:repeating-linear-gradient(#2989cc 0%, #2989cc 10%, #fff 10%, #fff 20%)
+        }
+        .radial{
+            /* background: radial-gradient(모양 (크기)at 중심점위치, 색상 위치, 색상 위치); */
+            /* background: radial-gradient(ellipse at center, #000 0%, #fff 100%); */
+            /* background: radial-gradient(circle at center, #000 0%, #fff 100%); */
+            /* background: radial-gradient(circle at 20% 10%, #000 0%, #fff 100%); */
+            /* background: radial-gradient(circle farthest-corner at 50px 50px, #000 0%, #fff 100%); */
+            /* background: radial-gradient(circle closest-corner at 50px 50px, #000 0%, #fff 100%); */
+            /* background: radial-gradient(circle farthest-side at 50px 50px, #000 0%, #fff 100%); */
+            /* background: radial-gradient(circle closest-side at 50px 50px, #000 0%, #fff 100%); */
+            background:repeating-radial-gradient(circle at center, #000 0%, #000 10%, #fff 10%, #fff 20%)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Gradient</h1>
+        <div class="box linear">Linear Gradient</div>
+        <div class="box radial">Radial Gradient</div>
+    </div>
+</body>
+</html>

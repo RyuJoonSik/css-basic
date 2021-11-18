@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #toggle-slider{
+            display: none;
+        }
+        #toggle-slider:checked + label{
+            background: #96e7ef;
+        }
+        #toggle-slider:checked +label::after{
+            background: #1d6269;
+            left: 55%;
+        }
+        label{
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+            border-radius: 25px;
+            background: #dff7fa;
+            text-indent: -9999em;
+            transition: 0.4s ease-out;
+            position: relative;
+        }
+        label::after{ /* 인라인 요소 */
+            content:'';
+            width: 40px;
+            height: 40px;
+            background: #a5cace;
+            position: absolute; /* 인라인 요소 크기 확인 가능 */
+            border-radius: 50%;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            transition: 0.4s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="toggle-slider"><label for="toggle-slider">On/Off</label>
+</body>
+</html>

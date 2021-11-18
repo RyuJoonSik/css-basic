@@ -1,0 +1,14 @@
+HTML
+- 시멘틱 태그 사용
+- SEO와 관련된 meta태그 사용
+- import 보다 link가 더 빠르기 때문에 폰트 호출 시 사용
+- 웹 호환성(i.e11, chrome)
+- 웹 접근성(tab키로 이동 가능)
+
+CSS
+- NHN 스타일 가이드 참고
+- BEM방법으로 클래스 속성 네이밍
+- position과 transform: translate의 차이
+- 반응형 min과 max의 차이
+- +와 ~ 셀렉터 
+- :checked를 통해 동적인 흉내

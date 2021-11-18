@@ -1,0 +1,77 @@
+/* 태블릿 */
+@media screen and (max-width: 768px) {
+  #wrap {
+    width: 100%;
+    background-position: 22% 0;
+  }
+  #footer .footerArea {
+    width: 100%;
+  }
+  .snb {
+    width: 22%;
+  }
+  #content {
+    width: 74%;
+  }
+  body {
+    background-color: green;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: yellow;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 480px) {
+  .topnav,
+  .locate,
+  .snb h2 {
+    display: none;
+  }
+  .logo {
+    padding-left: 0;
+  }
+  .logo a {
+    margin: 0 auto;
+  }
+  .mainnav {
+    padding-left: 0;
+  }
+  .mainnav li {
+    float: none;
+    text-align: center;
+  }
+  .snb,
+  #content {
+    width: 100%;
+  }
+  #wrap {
+    background: none;
+  }
+  .snb ul {
+    text-align: center;
+    margin-left: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .snb ul li {
+    display: inline-block;
+  }
+  #content .thum,
+  .btmnav,
+  .copy {
+    float: none;
+  }
+  #content .text {
+    margin-left: 14px;
+  }
+  .btmnav,
+  .copy {
+    margin-left: 14px;
+  }
+  .btmnav:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

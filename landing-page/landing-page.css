@@ -1,0 +1,150 @@
+.wrap {
+  margin: 2% auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+.nav::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.nav__items {
+  float: right;
+}
+.nav__items::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.nav__item {
+  z-index: 1;
+  position: relative;
+  float: left;
+  margin: .5rem;
+  background-clip: content-box;
+}
+.nav__item::before {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  content: '';
+  transition: all .2s;
+}
+.nav__link {
+  padding: 1rem;
+  border: 2px solid transparent;
+}
+.nav__link--register {color: #fff;}
+.nav__item--register::before {
+  background-color: purple;
+}
+.nav__item:hover .nav__link{color: #fff;}
+.nav__item:hover::before{
+  background-color: navy;
+}
+.main {
+  padding: 0 5% 5%;
+}
+.head {
+  margin-top: 2rem;
+}
+.head__title,
+.head__content {
+  width: 50%;
+  color: navy;
+  line-height: 1.5;
+}
+.head__title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.head__content {
+  font-size: 1.3rem;
+}
+.contents{
+  margin-top: 5%;
+}
+.contents::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.content {
+  float: left;
+  width: 26.6%;
+  border-radius: 5px;
+  padding: 3%;
+  background-color: #fff;
+  color: #333;
+}
+.content--1,
+.content--2 {
+  margin-right: 1%;
+}
+.content__title {
+  margin-bottom: 1.5rem;
+}
+.content_button {
+  display: block;
+  width: 50%;
+  height: 3rem;
+  margin: auto;
+  border: 3px solid transparent;
+  border-radius: 24px;
+  background-color: deepskyblue;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s;
+}
+.content_button:hover {
+  background-color: navy;
+}
+.nav__link:focus,
+.nav__link:active,
+.search__submit:focus,
+.search__submit:active,
+.content_button:focus,
+.content_button:active {
+  border-color: magenta;
+}
+.search {
+  margin-top: 5%;
+}
+.search__input {
+  width: 50%;
+  height: 3rem;
+  border-radius: 24px;
+}
+.search__submit {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  vertical-align: middle;
+  cursor: pointer;
+  transform: translateX(-150%);
+  transition: all .3s;
+}
+.search__submit::before {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  color: #333;
+  font-size: 2rem;
+  line-height: 1;
+  transform: rotate(45deg);
+  content: '\26B2';
+}
+.search__submit:hover {background-color: navy;}
+.search__submit:hover::before {color: #fff;}

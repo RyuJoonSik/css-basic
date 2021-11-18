@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkAnimation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #943;
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+
+        .main-nav {
+            list-style: none;
+            padding-left: 0;
+        }
+        .main-nav:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .main-nav li {
+            float: left;
+            text-align: center;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            transition: 0.5s;
+            padding-bottom: 8px;
+        }
+
+        .main-nav li:hover{
+            border-color: #b65;
+            padding-bottom: 0;
+        }
+        .main-nav li:hover a{
+            color: #d87;
+            font-size: 15px;
+        }
+
+        .main-nav li a {
+            text-decoration: none;
+            width: 105px;
+            margin-right: 4px;
+            display: block;
+            font-size: 16px;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

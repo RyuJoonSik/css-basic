@@ -1,0 +1,306 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* bottom: 90%; */
+  z-index: 1;
+  background-color: #333;
+  text-align: center;
+  color: #eee;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.title__name {
+
+}
+.title__year {
+
+}
+.main{
+  /* margin-top: calc(3rem * 1.5); */
+}
+.content {background-color: #222;}
+.parallex {
+  overflow: hidden;
+}
+.background {
+  position: relative;
+  background: url('images/background_img.jpg') no-repeat center / cover;
+  /* padding: 2rem; */
+  height: 100vh;
+  width: 100vw;
+  border-top: 3rem solid #000;
+  border-bottom: 3rem solid #000;
+  /* transform: translateY(0px); */
+}
+.background::after{
+  display: block;
+  clear: both;
+  content: '';
+}
+.image{
+  position: relative;
+  float: left;
+  background: url('images/img_yisunsin2.jpg') no-repeat center / cover;
+  width: 25%;
+  height: 100%;
+  /* height: 676.64px; */
+  border: 1px solid #000;
+  border-right: none;
+}
+/* .image::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  content: '이름 : 이순신';
+} */
+
+.quatation {
+  position: relative;
+  /* float: right; */
+  /* width: 75%; */
+  /* height: 100%; */
+  border: 1px solid #000;
+  border-left: none;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.quatation__item {
+  position: absolute;
+  display: inline-block;
+  top: 40%;
+  left: 10%;
+  /* transform: translateY(-50%); */
+  text-shadow: 1px 1px #777;
+
+  /* height: 33.33%; */
+  /* padding: 3%; */
+}
+.information__quote {
+  /* position: absolute; */
+  /* position: relative; */
+  /* height: 100%; */
+  /* left: 10%; */
+  /* top: 50%; */
+  /* width: 100%; */
+  /* display: inline-block; */
+  /* padding: 0 2rem; */
+  /* max-width: 100%; */
+  font-size: 2.2vw;
+  font-weight: 800;
+  /* font-style: oblique; */
+  /* text-align: center; */
+  /* line-height: 4.5; */
+  /* transform: translateY(-50%); */
+  /* font-family: 'Dokdo', cursive; */
+}
+.quatation__strong {
+  float: right;
+  font-weight: 700;
+  font-size: 1.5vw;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* right: 0; */
+}
+.information__quote--first,
+.information__quote--third {
+
+}
+.information__quote--second{
+
+}
+.scroll-animation {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  transform: translateX(-50%);
+  transform: rotate(90deg);
+  animation: 1s scroll infinite;
+}
+.scroll-animation::before {
+  position: absolute;
+  right: 110%;
+  content: '\276F';
+  animation: 1s scroll infinite;
+}
+.scroll-animation::after {
+  position: absolute;
+  right: 220%;
+  content: '\276F';
+  animation: 1s scroll infinite;
+}
+@keyframes scroll {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.timeline {
+  padding: 5%;
+}
+.timeline__container {
+  padding: 3%;
+  background-color: #ddd;
+}
+.timeline__title-main {
+  display: inline-block;
+  position: relative;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.timeline__title-main::before {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #000;
+  content: '';
+}
+.timeline__item {
+  position: relative;
+  box-sizing: content-box;
+  height: 30vw;
+  width: 50%;
+  /* background-color: #ddd; */
+  /* border: 1px solid #000; */
+}
+.timeline__container > article:nth-child(odd) {
+  border-right: 3px solid #d92929;
+}
+.timeline__container > article:nth-child(even) {
+  margin-left: 50%;
+  border-left: 3px solid #d92929;
+}
+.timeline__item::after{
+  position: absolute;
+  top: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #d92929;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  color: #fff;
+  transform: translate(-50%,-50%);
+}
+.timeline__container > article:nth-child(odd)::after {left: calc(100% + 1.5px);}
+.timeline__container > article:nth-child(even)::after {left: calc(-1.5px);}
+.timeline__item--order-1::after{content: '一';}
+.timeline__item--order-2::after{content: '二';}
+.timeline__item--order-3::after{content: '三';}
+.timeline__item--order-4::after{content: '四';}
+.timeline__item--order-5::after{content: '五';}
+.timeline__item--order-6::after{content: '六';}
+.timeline__item--order-7::after{content: '七';}
+.timeline__img {
+  box-sizing: content-box;
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  /* width: 80%; */
+  /* height: 80%; */
+  background-color: #fff;
+  border: 4px solid #000;
+  /* transform: translate(-50%, -50%); */
+}
+.timeline__img--order-1 {background: url(images/timeline_img_1.png) no-repeat center/cover;left: 10%; right: 0%;}
+.timeline__img--order-2 {background: url(images/timeline_img_2.jpg) no-repeat center/cover;right: 10%; left: 0%;}
+.timeline__img--order-3 {background: url(images/timeline_img_1.png) no-repeat center/cover;left: 10%; right: 0%;}
+.timeline__img--order-4 {background: url(images/timeline_img_4.jpg) no-repeat center/cover;right: 10%; left: 0%;}
+.timeline__img--order-5 {background: url(images/timeline_img_1.png) no-repeat center/cover;left: 10%; right: 0%;}
+.timeline__img--order-6 {background: url(images/timeline_img_6.jpg) no-repeat center/cover;right: 10%; left: 0%;}
+.timeline__img--order-7 {background: url(images/timeline_img_7.jpg) no-repeat center/cover;left: 10%; right: 0%;}
+
+.timeline__container > article:nth-child(odd) .timeline__img::before,
+.timeline__container > article:nth-child(even) .timeline__img::before {
+  position: absolute;
+  top: 50%;
+  border: 1rem solid transparent;
+  transform: translateY(-50%);
+  content: '';
+}
+.timeline__container > article:nth-child(odd) .timeline__img::before {
+  left: 100.5%;
+  border-left-color: #000;
+}
+.timeline__container > article:nth-child(even) .timeline__img::before {
+  right: 100.5%;
+  border-right-color: #000;
+}
+.timeline__container > article:nth-child(odd) .timeline__content {
+  /* padding-right: 10%; */
+}
+.timeline__container > article:nth-child(even) .timeline__content {
+  /* padding-left: 10%; */
+}
+.timeline__img::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #eee;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.timeline__img--order-1::after {content: '옥포해전';}
+.timeline__img--order-2::after {content: '사천포해전';}
+.timeline__img--order-3::after {content: '당포해전';}
+.timeline__img--order-4::after {content: '한산도대첩';}
+.timeline__img--order-5::after {content: '부산포해전';}
+.timeline__img--order-6::after {content: '명량해전';}
+.timeline__img--order-7::after {content: '노량해전';}
+.timeline__content {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  white-space: nowrap;
+  font-size: 3rem;
+  transform: translateY(-50%);
+}
+.timeline__container > article:nth-child(odd) .timeline__content {
+  left: 110%;
+}
+.timeline__container > article:nth-child(even) .timeline__content {
+  right: 110%;
+}
+.timeline__title {
+  font-size: 2rem;
+}
+.timeline__description {
+  font-size: 1.5vw;
+  white-space: normal;
+}
+.footer {
+  background-color: #000;
+  padding: 2rem;
+  text-align: center;
+}
+.footer_button {
+  /* overflow: hidden; */
+  border: none;
+  /* border-radius: 40px; */
+}
+.footer_link {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #eee;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all .5s;
+}
+.footer_button:hover .footer_link{
+  background-color: #d92929;
+  color: #fff;
+}

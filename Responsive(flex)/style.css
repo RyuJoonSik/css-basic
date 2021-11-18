@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+  background: #ecf0f1;
+}
+.wrapper {
+  max-width: 60rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+.gradientbg::before,
+.gradientbg::after {
+  content: "";
+  display: table;
+}
+.gradientbg::after {
+  clear: both;
+}
+
+.sidebars::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.gradientbg .sidebar {
+  width: 20%;
+  padding: 1.618rem;
+  /* color: #fff; */
+}
+
+.gradientbg main {
+  width: 60%;
+  padding: 1.618rem;
+  float: left;
+  margin-left: 20%;
+  /* background: #fff; */
+}
+
+.gradientbg .left {
+  float: left;
+  margin-left: -80%;
+  /* background: #3498db; */
+}
+.gradientbg .right {
+  float: right;
+  /* background: #3498db; */
+}
+
+.gradientbg {
+  background: linear-gradient(
+    to right,
+    #3498db 0%,
+    #3498db 20%,
+    #fff 0%,
+    #fff 80%,
+    #3498db 80%,
+    #3498db 100%
+  );
+}
+.flexbg {
+  display: flex;
+}
+.flexbg main {
+  padding: 1.618rem;
+  width: 60%;
+  background: #fff;
+  order: 2;
+}
+.flexbg .sidebar {
+  width: 20%;
+  padding: 1.618rem;
+  color: #fff;
+}
+.flexbg .left {
+  background-color: #3498db;
+  order: 1;
+}
+.flexbg .right {
+  background-color: #34495e;
+  order: 3;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: blue;
+  }
+
+  .gradientbg main {
+    float: none;
+    margin-left: 0;
+    background: #fff;
+    width: 100%;
+  }
+  .gradientbg .left {
+    margin-left: 0;
+  }
+  .gradientbg .sidebar {
+    width: 50%;
+  }
+  .gradientbg {
+    background: linear-gradient(to right, #3498db 50%, #34495e 0%);
+  }
+  .flexbg {
+    flex-wrap: wrap;
+  }
+  .flexbg main {
+    width: 100%;
+    order: 1;
+  }
+  .flexbg .sidebar {
+    width: 50%;
+  }
+  .flexbg .right {
+    order: 3;
+  }
+  .flexbg .left {
+    order: 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gradientbg {
+    background: none;
+  }
+  .gradientbg .sidebar {
+    width: 100%;
+    float: none;
+  }
+  .gradientbg .left {
+    background: #3498db;
+  }
+  .gradientbg .right {
+    background: #34495e;
+  }
+
+  .flexbg .sidebar {
+    width: 100%;
+  }
+}

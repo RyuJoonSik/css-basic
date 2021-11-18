@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            /* height: 100%; */
+        }
+        header{
+            background: #333;
+            color: #fff;
+        }
+        footer{
+            background: #333;
+            color: #fff;
+            padding: 30px 0; /* 높이를 지정하지 않도록 한다(제대로 반영이 안됨) */
+        }
+        .wrapper{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>HEADER</header>
+        <div class="main-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos atque sunt optio pariatur nobis, provident et dolore voluptatum iste esse reprehenderit quia officiis laudantium porro. Facere sed repudiandae eius.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos atque sunt optio pariatur nobis, provident et dolore voluptatum iste esse reprehenderit quia officiis laudantium porro. Facere sed repudiandae eius.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos atque sunt optio pariatur nobis, provident et dolore voluptatum iste esse reprehenderit quia officiis laudantium porro. Facere sed repudiandae eius.</p>
+        </div>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>

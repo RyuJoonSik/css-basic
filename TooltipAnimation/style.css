@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+  line-height: 1.618em;
+  color: #555555;
+  background: #2c3e50;
+}
+
+.wrapper {
+  background: #fff;
+  max-width: 50rem;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 5rem;
+  border: 0.5rem solid #34495e;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.fa::before {
+  font-size: 4rem;
+  line-height: 1.618em;
+  margin: 1rem;
+}
+
+.fa-twitter {
+  color: #00b0ed;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.footnotes {
+  margin: 60rem auto;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+.tooltip:hover .tip {
+  opacity: 1;
+  margin-left: 0;
+}
+.tip {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  padding: 1em;
+  font-size: 0.8em;
+  font-weight: normal;
+  background: #34495e;
+  border-radius: 1em;
+  color: #fff;
+  white-space: nowrap;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.35s;
+  margin-left: 1em;
+}
+.tip::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: transparent #34495e transparent transparent;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.foot:target {
+  background: black;
+  color: red;
+}

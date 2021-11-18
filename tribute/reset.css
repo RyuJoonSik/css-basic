@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* [속성 선언 순서 기준: 1: 레이아웃, 2: BOX, 3: 배경, 4: 폰트, 5: 기타] */
+body {
+  font-family: 'Noto Serif KR', serif;
+}
+body,
+figure,
+ul,
+blockquote,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
